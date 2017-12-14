@@ -1,0 +1,45 @@
+{
+  "ProjectName": "IQR-Mobile6",
+  "ProjectGuid": "c2238f7c-98b7-4ca2-b4b5-1a110b03e727",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.IQRMobile6",
+  "DisplayName": "IQR-Mobile6",
+  "Author": "",
+  "Description": "IQR-Mobile6",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "6.4.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{c50a01d2-02d3-4d17-8b09-0b1d44aa02e3}",
+  "WP8ProductID": "{40488dd0-98e8-4884-8cab-694fbece1a5d}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.IQRMobile6",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
