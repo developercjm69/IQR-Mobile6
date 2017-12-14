@@ -148,7 +148,7 @@ app.photoView = kendo.observable({});
                     var rldrop=0;
                     // for(var rldrop=0; rldrop<basedata.length;rldrop++){
                     // while(rldrop<basedata.length){
-                   basedata.forEach((basedataone, index, array) => {
+                   basedata.forEach(basedataone, index, array)  {
 
                         console.log(index);
                         var imageData =basedataone; //basedata[rldrop];
@@ -215,7 +215,7 @@ app.photoView = kendo.observable({});
                             console.error(error);
                         });
                         rldrop++;
-                    });
+                    };
                     
                     //return false;
 
