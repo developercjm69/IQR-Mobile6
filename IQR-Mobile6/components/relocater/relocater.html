@@ -1,0 +1,53 @@
+﻿<div id="relocator" data-role="view" data-title="IQ Relocator" data-layout="main"
+     data-model="app.relocaterView.relocaterModel" data-bind="events: { show: show, beforeShow: beforeShow, }">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title">IQ mobile</span>
+            <a data-role="button" href="#:back" data-align="left">Back</a>
+            <a data-role="button" data-align="right" data-bind="events: { click: clearClick }">Clear</a>
+        </div>
+    </header>
+   <div id="relocate-info-div" style="height: 70px;">
+        <form id="relocate-form">
+            <div style="padding:5px;">
+            <font class="numberCircle"> &nbsp;&nbsp;1&nbsp;&nbsp;</font><a data-role="button" style="width: 80%;"; data-bind="click: scanClick">Scan Items</a>
+            </div>
+                <div style="padding:5px">
+            <font class="numberCircle">&nbsp;&nbsp;2&nbsp;&nbsp;</font><a data-role="button" style="width:100px"; data-align="right" data-bind="events: { click: scanLocation }">Scan Location</a>
+                 <label>
+                    To &nbsp;&nbsp;<input id="locationTo" style="width:40%;" type="text" name="locationTo" tabindex="1" ; data-bind="value: params.locationTo">
+                </label>
+            </div>
+
+            <div style="padding:5px;">
+                <font class="numberCircle"> &nbsp;&nbsp;3&nbsp;&nbsp;</font><a data-role="button" style="width:80%" ; data-bind="click: processItems">&nbsp;&nbsp;Save</a>
+            </div>
+        </form>
+    </div>
+    <div class="button-group button-group-vertical">
+        <a data-role="button" id="loginBtn" style="visibility:hidden;" data-bind="click: processLogin">Login</a>
+    </div>
+    <div id="resultDivRelocater">result</div>
+    <div id="lblMessageDiv"><label id="lblMessage"></label> </div>
+
+    <form id="editing-form">
+        <input id="ItemNumber" style="visibility:hidden;" type="text" data-bind="value: newItem.ItemNumber" />
+        <input id="Description" style="visibility:hidden;" type="text" data-bind="value: newItem.Description" />
+        <input id="SerialNumber" style="visibility:hidden;" type="text" data-bind="value: newItem.SerialNumber" />
+        <button style="visibility:hidden;" type="button" id=btn_add data-bind="click: addItem">Add</button>
+    </form>
+
+    <div id="listView" data-source="itemData"></div>
+
+    <script type="text/x-kendo-template" id="listViewTemplate">
+        <div class="k-widget container">
+            <p>#:ItemNumber#</p>
+            <p>#:Description#</p>
+            <p>#:SerialNumber#</p>
+            <div class="edit-buttons">
+                <a data-role="detailbutton" data-style="rowdelete" class="k-delete-button"></a>
+            </div>
+
+        </div>
+    </script>
+</div>

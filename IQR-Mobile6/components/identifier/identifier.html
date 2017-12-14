@@ -1,0 +1,117 @@
+<div id="identifier" data-role="view" data-title="IQ Identifier" data-layout="main"
+     data-model="app.identifierView.identifierModel" data-bind="events: { show: show, beforeShow: beforeShow }">
+     <header data-role="header">
+         <div data-role="navbar">
+             <span data-role="view-title">IQ mobile</span>
+             <a data-role="button" href="#:back" data-align="left">Back</a>
+         </div>
+     </header>
+     <div id="identify-info-div" style="height: 50px; table-layout:auto;">
+         <form id="identify-form">
+       <ul data-role="listview">
+            <li>
+                <label>
+                    PO-ID
+                    <input id="poid" type="text" data-bind="value: invitem.poid" />
+                </label>
+            </li>
+             <li>
+                <label>
+                    Item
+                    <input type="text" name="item" id="autocomplete" />
+                    
+                    <!--<select id="item"></select>-->
+
+                   <!--<input id="item" type="text" style="background-color:lightgray" name="itemNumber" data-bind="value: invitem.item" />-->
+
+                </label>
+            </li>
+            <li>
+                <label>
+                    Manufacturer
+                    <input id="mfgr" type="text" style="background-color:lightgray" data-bind="value: invitem.mfgr" />
+                </label>
+            </li>
+            <li>
+                <label>
+                    Condition
+                    <input id="condition" type="text" style="background-color:lightgray" data-bind="value: invitem.condition" />
+                </label>
+            </li>
+            <li>
+                <label>
+                    Serial
+                    <input id="serial" type="text" style="background-color:lightgray" data-bind="value: invitem.serial" />
+                </label>
+            </li>
+           <li>
+               <label>
+                   Weight
+                   <input id="weight" type="text" style="background-color:lightgray" data-bind="value: invitem.weight" />
+               </label>
+           </li>
+           <li>
+               <label>
+                   Warehouse
+                   <input id="warehouse" type="text" style="background-color:lightgray" data-bind="value: invitem.warehouse" />
+               </label>
+           </li>
+           <li>
+               <label>
+                   Location
+                   <input id="location" type="text" style="background-color:lightgray" data-bind="value: invitem.location" />
+               </label>
+           </li>
+           <li>
+               <label>
+                   Country
+                   <input id="country" type="text" style="background-color:lightgray" data-bind="value: invitem.country" />
+               </label>
+           <li>
+               <label>
+                   UserDefined1
+                   <input id="userdefined1" type="text" style="background-color:lightgray" data-bind="value: invitem.userdefined1" />
+               </label>
+           </li>
+           <li>
+               <label>
+                   UserDefined2
+                   <input id="userdefined2" type="text" style="background-color:lightgray" data-bind="value: invitem.userdefined2" />
+               </label>
+           </li>
+           <li>
+               <label>
+                   UserDefined3
+                   <input id="userdefined3" type="text" style="background-color:lightgray" data-bind="value: invitem.userdefined3" />
+               </label>
+           </li>
+           <li>
+               <label>
+                   UserDefined4
+                   <input id="userdefined4" type="text" style="background-color:lightgray" data-bind="value: invitem.userdefined4" />
+               </label>
+           </li>
+           <li>
+               <label>
+                   UserDefined5
+                   <input id="userdefined5" type="text" style="background-color:lightgray" data-bind="value: invitem.userdefined5" />
+               </label>
+           </li>
+        </ul>
+          </form>
+
+
+     </div>
+     <div id="resultDivRelocater">result</div>
+
+     <footer data-role="footer">
+         <div data-role="tabstrip" id="navigation-container">
+             <a data-role="button" data-bind="events: { click: masterClick }" data-icon="info">Master Item Not Found</a>
+             <a data-role="button" data-bind="events: { click: scanSerialClick }" data-icon="custom">Scan Serial</a>
+             <a data-role="button" data-bind="events: { click: pictureClick }" data-icon="camera">Picture</a>
+             <a data-role="button" data-bind="events: { click: saveClick }" data-icon="save">Save</a>
+             <a data-role="button" data-bind="events: { click: scanClick }" data-icon="custom">Scan Item</a>
+         </div>
+     </footer>
+</div>
+

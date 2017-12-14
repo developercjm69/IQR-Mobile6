@@ -1,42 +1,59 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+﻿<!DOCTYPE html>
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World!</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="kendo/styles/kendo.mobile.all.min.css" />
+    <link rel="stylesheet" href="styles/kendo.mobile.flat.material-blue.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.322/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.322/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="\scripts\select2\css\select2.css" />
+
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/jquery.panzoom.js"></script>
+
+    <!---<script src="http://cdnjs.cloudflare.com/ajax/libs/dropbox.js/0.10.2/dropbox.min.js"></script>--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropbox.js/2.5.12/Dropbox-sdk.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>-->
+
+    <script src="scripts/app.js"></script>
+    <script src="components/IQRapi/iqrapi.js"></script>
+    <script src="components/utility/utility.js"></script>
+    <script src="components/auth/iqauth.js"></script>
+    <script src="components/home/home.js"></script>
+    <script src="components/location/location.js"></script>
+    <script src="components/relocater/relocater.js"></script>
+    <script src="components/photo/photo.js"></script>
+    <script src="components/appsettings/index.js"></script>
+    <script src="components/identifier/identifier.js"></script>
+    <script src="scripts/settings.js"></script>
+    <script src="scripts/select2/js/select2.js"></script>
+    <script src="scripts/select2/js/select2.full.js"></script>.
+    <script src="scripts/select2/js/select2.full.min.js"></script>
+    <script src="scripts/select2/js/select2.min.js"></script>
+    <script src="scripts/jquery.autocomplete.js"></script>
+    <script src="kendo/js/kendo.all.min.js"></script>
+
+</head>
+<body id="iqApp">
+    <div data-role="layout" data-id="main">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+                <img src="images/IQreseller_logo2013_p.png" data-align="left" style="height: 28px;" />
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+
+        < application views will be rendered here >
+
+    </div>
+</body>
+
+
 </html>

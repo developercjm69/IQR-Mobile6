@@ -1,0 +1,34 @@
+<div id="location" data-role="view" data-title="Change Location"
+     data-model="app.locationView.locationModel" data-bind="events: { init: init, beforeShow: beforeShow }">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title">Location</span>
+            <a data-role="button" href="#:back" data-align="left">Back</a>
+            <a data-role="button" data-align="right" data-bind="events: { click: clearLocationClick }">Clear</a>
+        </div>
+    </header>
+    <div id="location-info-div" style="height: 70px;">
+        <form id="location-form">
+            <ul data-role="listview">
+                <li>
+                    <label>
+                        From Location
+                        <input id="locationFrom" name="locationFrom" type="text" data-bind="value: params.locationFrom" autofocus />
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        To Location
+                        <input id="locationTo" name="locationTo" type="text" data-bind="value: params.locationTo" />
+                    </label>
+                </li>
+            </ul>
+            <div class="button-group button-group-vertical">
+                <a data-role="button" data-bind="click: processItems">Save</a>
+            </div>
+            <div id="resultDivContainer">result</div>
+            <div id="lblMessageDiv"><label id="lblMessageLocation"></label> </div>
+
+        </form>
+    </div>
+</div>

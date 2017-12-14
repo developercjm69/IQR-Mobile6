@@ -1,0 +1,24 @@
+<div id="bulk" data-role="view" data-title="Bulk"
+     data-model="app.bulkView.bulkModel" data-bind="events: { init: init, beforeShow: beforeShow }">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title">Bulk</span>
+            <a data-role="button" href="#:back" data-align="left">Back</a>
+            <a data-role="button" data-align="right" data-bind="events: { click: clearClick }">Clear</a>
+        </div>
+        <script src="cordova.js"></script>
+
+    </header>
+    <div id="bulk-info-div" style="height: 70px;">
+        <form id="bulk-form">
+            <ul data-role="listview">
+                 <li>
+                    <label>
+                        To Location
+                        <input id="locationTo" type="text" data-bind="value: params.locationTo" onchange="setGlobalLocationTo(this.value)" />
+                    </label>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>

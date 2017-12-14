@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'DinMedium';
+    src: url('fonts/ufonts.com_din-medium.ttf');
+}
+
+.km-view-title {
+    font-family: DinMedium;
+}
+
+.km-delete-confirm {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#iqApp .image-with-text img {
+    float: left;
+    margin-right: 15px;
+}
+
+#iqApp .block {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+#iqApp .button-group,
+#iqApp .icon-group {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+#iqApp .button-group {
+    table-layout: fixed;
+}
+
+    #iqApp .button-group .km-button {
+        display: table-cell;
+        padding: .6em .8em;
+        margin: 1em 0;
+    }
+
+    #iqApp .button-group.button-group-vertical .km-button {
+        display: block;
+    }
+
+#iqApp.km-flat .button-group .km-button.primary {
+    color: #fff;
+    background-color: #10c4b2;
+}
+
+#iqApp.km-ios7 .button-group .km-button.primary {
+    color: #fff;
+    background-color: #007aff;
+}
+
+#iqApp.km-android .button-group .km-button.primary {
+    color: #fff;
+    background-color: #33b5e5;
+}
+
+#iqApp .group-separator {
+    border: none;
+    background: transparent;
+}
+
+#iqApp .group-separator-header {
+    margin: 1em 0;
+}
+
+#iqApp .app-icon {
+    text-align: center;
+    margin: 3em 0;
+}
+
+#iqApp .view-title {
+    text-align: center;
+    font-weight: normal;
+}
+
+#iqApp .km-drawer-button:after,
+#iqApp .km-drawer-button:before {
+    content: '\e077';
+}
+
+#iqApp.km-flat .km-drawer .km-content {
+    background-color: #fcfcfc;
+}
+
+#iqApp .icon-group .app-icon,
+#iqApp .icon-group .app-details {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#iqApp .icon-group .app-icon {
+    margin: 0;
+    width: 5em;
+    overflow: hidden;
+    text-align: left;
+}
+
+    #iqApp .icon-group .app-icon img {
+        display: block;
+        max-width: 5em;
+        height: auto;
+    }
+
+#iqApp .icon-group .app-details h2,
+#iqApp .icon-group .app-details h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+#iqApp .icon-group .app-details h4 {
+    color: #828282;
+    margin-top: 0.5em;
+}
+
+
+/* START_CUSTOM_CODE_iqApp */
+
+/*.km-flat .km-view .km-navbar {
+    background-color: rgb(255, 0, 0);
+}
+.km-flat .km-view .km-navbar .km-view-title > * {
+    color: rgb(255, 255, 255);
+}
+.km-flat .km-view .km-tabstrip .km-button {
+    background-color: rgb(255, 0, 0);
+}
+.km-flat .km-view .km-tabstrip .km-button.km-state-active {
+    background-color: rgb(0, 16, 165);
+}
+.km-flat .km-view .km-content .km-list .km-state-active .km-listview-link {
+    background-color: rgb(255, 0, 0);
+}*/
+
+/* END_CUSTOM_CODE_iqApp */
+
+
+/*Fix navigation labels*/
+
+#iqApp #navigation-container.km-tabstrip .km-button {
+    vertical-align: top;
+}
+
+    #iqApp #navigation-container.km-tabstrip .km-button .km-text {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+#iqApp #navigation-container .active {
+    background: #10c4b2;
+    color: #fff;
+}
+
+    #iqApp #navigation-container .active:after {
+        color: #fff;
+    }
+
+.description {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: .83em;
+    margin-bottom: .83em;
+}
+
+.km-drawer-button:before, .km-drawer-button:after {
+    content: "\E077";
+}
+
+.content-view {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+form > ul > li > input {
+    clear: left;
+}
+
+#photo-list li {
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 60px;
+    padding: 0;
+}
+
+.product-image img {
+    width: 90px;
+    height: 60px;
+}
+
+.photo-added {
+    float: left;
+    position: relative;
+    width: 95px;
+    height: 60px;
+    margin: 0 3px;
+    padding: 0;
+}
+
+#zoomable-explanation {
+	position: absolute;
+	padding: 5px;
+	margin: 2em;
+	background: black;
+	color: white;
+	border: 1px solid white;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*-webkit-opacity: 0.3;*/
+}
+
+.km-center-item:before {
+  content: "\a0";
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }

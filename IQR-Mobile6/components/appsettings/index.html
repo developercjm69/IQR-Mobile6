@@ -1,0 +1,81 @@
+<div id="appsettings-home" data-role="view" data-title="App Settings"
+     data-model="app.appSettingsView.appSettingsModel" data-bind="events: { show: show }">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-role="button" href="#:back" data-align="left">Back</a>
+        </div>
+    </header>
+    <form id="settings-form">
+        <ul data-role="listview">
+            <li>
+                <label>
+                    Dropbox API Key
+                    <input id="dropBoxApi" type="text" data-bind="value: params.dropBoxApi" /><br />
+                </label>
+                </li>
+                <li>
+                 <label>
+                    Dropbox API Secret
+                    <input id="dropboxSecret" type="text" data-bind="value: params.dropboxSecret" />
+                </label>
+            </li>
+            <li>
+                <label>
+                    IQ API Username
+                    <input id="iqUser" type="text" data-bind="value: params.iqUser" />
+                </label>
+            </li>
+            <li>
+                <label>
+                    IQ API Password
+                    <input id="iqPass" type="password" data-bind="value: params.iqPass" />
+                </label>
+            </li>
+            <li>
+                <label>
+                    IQ Tenant Alias Key
+                    <input id="iqKey" type="text" data-bind="value: params.iqKey" />
+                </label>
+            </li>
+            <li>
+                <label>
+                    IQ Application Alias Key
+                    <input id="iqAppKey" type="text" data-bind="value: params.iqAppKey" />
+                </label>
+            </li>
+            <!--<li>
+                <label>
+                    Public Folder URL
+                    <input type="text" data-bind="value: params.publicFolderUrl" />
+                </label>
+            </li>-->
+        </ul>
+        <div style="padding: .5em .7em">
+            <label>
+                File Name Taxonomy
+            </label><br />
+            <div style="width: 50%; float: left">
+                <input type="radio" data-bind="checked: params.fileNameItem" name="fileName" value="0" checked />Item ID<br />
+                <input type="radio" data-bind="checked: params.fileNameItem" name="fileName" value="1" />Item Number<br />
+            </div>
+            <div style="width: 50%; float: right; right: 0px;">
+                <input type="radio" data-bind="checked: params.fileNameMD" name="fileEnding" value="0" />Mfg<br />
+                <input type="radio" data-bind="checked: params.fileNameMD" name="fileEnding" value="1" checked />Date<br />
+            </div>
+        </div>
+        <div style="padding: .5em .7em; clear: both">
+            <label>File Size </label><br />
+            <input type="radio" name="fileSize" data-bind="checked: params.fileSize" value="0" checked />Large (Full Size, ~10mb)<br />
+            <input type="radio" name="fileSize" data-bind="checked: params.fileSize" value="1" />Medium (~5mb)<br />
+            <input type="radio" name="fileSize" data-bind="checked: params.fileSize" value="2" />Small (~1mb)<br />
+            <input type="radio" name="fileSize" data-bind="checked: params.fileSize" value="3" />Thumbnail (~250kb)
+        </div>
+    </form>
+
+    <footer data-role="footer" style="background-color: white;">
+        <div class="button-group button-group-vertical">
+            <a data-role="button" data-bind="events: { click: saveClick }">Save</a>
+        </div>
+    </footer>
+</div>

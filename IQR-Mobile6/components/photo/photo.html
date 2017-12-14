@@ -1,0 +1,56 @@
+<div id="photo-home" data-role="view" data-title="Photo Uploader"
+     data-model="app.photoView.photoModel" data-bind="events: { init: init, beforeShow: beforeShow }">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-role="button" href="#:back" data-align="left">Back</a>
+        </div>
+    </header>
+    <div id="file-info-div" style="height: 70px;">
+        <div style="margin: 4px;">
+            <div id="itemNumber"style="float: left; width:250px; height: 15px;"><span data-bind="text: params.itemNumber"></span></div>
+            <div id="itemId"style="text-align:right"><span data-bind="text: params.itemId"></span></div>
+        </div>
+        <div id="itemDescription"style="margin: 4px;"><span data-bind="text: params.itemDescription"></span></div>
+    </div>
+    <div id="photo-list-div" hidden="hidden" style="height: 70px">
+        <div id="photo-scroller" data-role="scroller" data-orientation="horizontal" style="height: 50px; z-index: 1000;">
+            <div id="photo-scroll-container">
+                <div id="photo-list" data-role="listview" data-template="template" data-bind="source: photoList, events: { click: imageSelect }"></div>
+            </div>
+       </div>
+    </div>
+     <!--id="zoomable"-->
+    <div id="gridimg" style="z-index: 1; height: 100%;width:100%;">
+        <img id="lastImage" style="display: block;" /> 
+    </div>
+
+    <div data-role="modalview" id="confirm-delete-modal">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title">Delete?</span>
+            </div>
+        </div>
+        <div>
+            <p>Confirm delete of picture?</p>
+        </div>
+        <div class="km-delete-confirm">
+            <a data-role="button" data-bind="events: { click: confirmDelete }">Yes</a>
+            <a data-role="button" data-bind="events: { click: confirmDelete }">No</a>
+        </div>
+    </div>
+
+    <footer data-role="footer">
+        <div data-role="tabstrip" id="navigation-container">
+            <a data-role="button" data-bind="events: { click: uploadClick }" data-icon="share">Upload</a>
+            <a data-role="button" data-bind="events: { click: pictureClick }" data-icon="camera">Picture</a>
+            <!--<a data-role="button" data-bind="events: { click: scanClick }" data-icon="settings">Scan</a>-->
+        </div>
+    </footer>
+
+    <script type="text/x-kendo-template" id="template">
+        <div class="product-image touch">
+            <img src="#= fileName #"/>
+        </div>
+    </script>
+</div>

@@ -1,0 +1,39 @@
+<div id="shipments" data-role="view" data-title="IQ Shipments" data-layout="main"
+     data-model="app.shipmentsView.shipmentsModel" data-bind="events: { beforeShow: beforeShow, show: show,  }">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title">IQ Shipments</span>
+            <a data-role="button" href="#:back" data-align="left">Back</a>
+        </div>
+    </header>
+    <div id="shipments-info-div" style="height: 50px; table-layout:auto;">
+        <form id="shipments-form">
+
+         </form>
+ 
+        <div id="pickingView" data-source="shipmentsData"></div>
+       <script type="text/x-kendo-template" id="pickingViewTemplate">
+            <div class="k-widget container">
+                <p>#:scheduledDate#</p>
+                <p>#:companyName#</p>
+                <p>#:contactName#</p>
+                <p>#:so#</p>
+                <p>#:shipperName#</p>
+                <p>#:serviceType#</p>
+            </div>
+        </script>
+    </div>
+
+    <footer data-role="footer">
+        <div data-role="tabstrip" id="navigation-container">
+            <a data-role="button" data-bind="events: { click: masterClick }" data-icon="info">Master Item Not Found</a>
+            <a data-role="button" data-bind="events: { click: scanSerialClick }" data-icon="custom">Scan Serial</a>
+            <a data-role="button" data-bind="events: { click: pictureClick }" data-icon="camera">Picture</a>
+            <a data-role="button" data-bind="events: { click: saveClick }" data-icon="save">Save</a>
+            <a data-role="button" data-bind="events: { click: scanClick }" data-icon="custom">Scan Item</a>
+        </div>
+    </footer>
+
+</div>
+
+
