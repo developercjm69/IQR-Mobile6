@@ -2,7 +2,7 @@
   "ProjectName": "IQR-Mobile6",
   "ProjectGuid": "c2238f7c-98b7-4ca2-b4b5-1a110b03e727",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.IQRMobile6",
+  "AppIdentifier": "com.telerik.iqapp",
   "DisplayName": "IQR-Mobile6",
   "Author": "",
   "Description": "IQR-Mobile6",
@@ -41,5 +41,6 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
-  ]
+  ],
+  "iOSDeploymentTarget": "6.0"
 }

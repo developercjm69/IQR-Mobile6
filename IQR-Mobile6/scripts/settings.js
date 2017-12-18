@@ -9,7 +9,7 @@ var localSaved = window.localStorage.getItem("iqSettings");
 if (localSaved != null) {
     var params = JSON.parse(localSaved);
     var applicationKey = params.iqAppKey;
-}
+ }
 else {
 
     var applicationKey = "";

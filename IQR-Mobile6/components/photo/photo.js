@@ -4,6 +4,9 @@ app.photoView = kendo.observable({});
     var basedata = [];
     var dataimage = [];
     var dropboxImageUrl= '';
+    var x = localStorage.getItem('iqSettings');
+    var params = JSON.parse(x);
+
 (function (parent) {
     var tries = 0,
         errorResult = function (e) {
@@ -104,6 +107,7 @@ app.photoView = kendo.observable({});
                 error: function (e) {
                     console.log("ImageUrl update error");
                     console.log(e);
+                    alert("ImageUrl update error");
                     app.mobileApp.hideLoading();
                 }
             });
@@ -133,8 +137,9 @@ app.photoView = kendo.observable({});
         },
         uploadFileSequence = function (sequence, buildString) {
             var accessToken = '';
-            var DROPBOX_APP_KEY = 'enpq4o5era7m3fp';
-
+            var DROPBOX_APP_KEY = params.dropBoxApi;
+            
+            
             var dbx = new Dropbox({ clientId: DROPBOX_APP_KEY });
             dbx.authenticateWithCordova(
                 function(accessToken123) {        
@@ -148,7 +153,7 @@ app.photoView = kendo.observable({});
                     var rldrop=0;
                     // for(var rldrop=0; rldrop<basedata.length;rldrop++){
                     // while(rldrop<basedata.length){
-                   basedata.forEach(basedataone, index, array)  {
+                   basedata.forEach((basedataone, index, array) =>  {
 
                         console.log(index);
                         var imageData =basedataone; //basedata[rldrop];
@@ -215,7 +220,7 @@ app.photoView = kendo.observable({});
                             console.error(error);
                         });
                         rldrop++;
-                    };
+                    });
                     
                     //return false;
 
