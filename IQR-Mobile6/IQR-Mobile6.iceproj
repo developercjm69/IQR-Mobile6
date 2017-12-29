@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>c2238f7c-98b7-4ca2-b4b5-1a110b03e727</ProjectGuid>
+    <ProjectName>IQR-Mobile6</ProjectName>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
+  <ItemGroup>
+    <Content Include=".abignore" />
+    <Content Include=".abproject" />
+    <Content Include=".debug.abproject" />
+    <Content Include=".release.abproject" />
+    <Content Include="App_Resources\iOS\config.xml" />
+    <Content Include="App_Resources\iOS\Info.plist" />
+    <Content Include="components\appsettings\index.html" />
+    <Content Include="components\appsettings\index.js" />
+    <Content Include="components\auth\iqauth.js" />
+    <Content Include="components\bulk\bulk.html" />
+    <Content Include="components\bulk\bulk.js" />
+    <Content Include="components\home\home.html" />
+    <Content Include="components\home\home.js" />
+    <Content Include="components\identifier\identifier.html" />
+    <Content Include="components\identifier\identifier.js" />
+    <Content Include="components\IQRapi\home.html" />
+    <Content Include="components\IQRapi\home.js" />
+    <Content Include="components\location\location.html" />
+    <Content Include="components\location\location.js" />
+    <Content Include="components\photo\photo.html" />
+    <Content Include="components\photo\photo.js" />
+    <Content Include="components\relocater\relocater.html" />
+    <Content Include="components\relocater\relocater.js" />
+    <Content Include="components\shipments\shipments.html" />
+    <Content Include="components\shipments\shipments.js" />
+    <Content Include="components\utility\utility.js" />
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="css\index.css" />
+    <Content Include="images\IQreseller_logo2013.jpg" />
+    <Content Include="images\IQreseller_logo2013_mobile.png" />
+    <Content Include="images\IQreseller_logo2013_p.png" />
+    <Content Include="images\server_room.jpg" />
+    <Content Include="images\server_room0.jpg" />
+    <Content Include="images\server_room1.jpg" />
+    <Content Include="images\server_room2.jpg" />
+    <Content Include="img\cordova.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="index-starter.html" />
+    <Content Include="index.html" />
+    <Content Include="IQreseller_logo2013_mobile.png" />
+    <Content Include="js\index.js" />
+    <Content Include="kendo\js\jquery.min.js" />
+    <Content Include="kendo\js\kendo.all.min.js" />
+    <Content Include="kendo\js\kendo.listview.min.js" />
+    <Content Include="kendo\js\kendo.mobile.min.js" />
+    <Content Include="kendo\styles\images\back.png" />
+    <Content Include="kendo\styles\images\kendoui.svg" />
+    <Content Include="kendo\styles\images\kendoui.ttf" />
+    <Content Include="kendo\styles\images\kendoui.woff" />
+    <Content Include="kendo\styles\images\wp8_icons.png" />
+    <Content Include="kendo\styles\images\wp8_inverseicons.png" />
+    <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\editable-listview.js" />
+    <Content Include="scripts\jquery-ui.js" />
+    <Content Include="scripts\jquery.autocomplete.js" />
+    <Content Include="scripts\jquery.panzoom.js" />
+    <Content Include="scripts\Select2\css\select2.css" />
+    <Content Include="scripts\Select2\js\i18n\ar.js" />
+    <Content Include="scripts\Select2\js\i18n\az.js" />
+    <Content Include="scripts\Select2\js\i18n\bg.js" />
+    <Content Include="scripts\Select2\js\i18n\ca.js" />
+    <Content Include="scripts\Select2\js\i18n\cs.js" />
+    <Content Include="scripts\Select2\js\i18n\da.js" />
+    <Content Include="scripts\Select2\js\i18n\de.js" />
+    <Content Include="scripts\Select2\js\i18n\el.js" />
+    <Content Include="scripts\Select2\js\i18n\en.js" />
+    <Content Include="scripts\Select2\js\i18n\es.js" />
+    <Content Include="scripts\Select2\js\i18n\et.js" />
+    <Content Include="scripts\Select2\js\i18n\eu.js" />
+    <Content Include="scripts\Select2\js\i18n\fa.js" />
+    <Content Include="scripts\Select2\js\i18n\fi.js" />
+    <Content Include="scripts\Select2\js\i18n\fr.js" />
+    <Content Include="scripts\Select2\js\i18n\gl.js" />
+    <Content Include="scripts\Select2\js\i18n\he.js" />
+    <Content Include="scripts\Select2\js\i18n\hi.js" />
+    <Content Include="scripts\Select2\js\i18n\hr.js" />
+    <Content Include="scripts\Select2\js\i18n\hu.js" />
+    <Content Include="scripts\Select2\js\i18n\id.js" />
+    <Content Include="scripts\Select2\js\i18n\is.js" />
+    <Content Include="scripts\Select2\js\i18n\it.js" />
+    <Content Include="scripts\Select2\js\i18n\ja.js" />
+    <Content Include="scripts\Select2\js\i18n\km.js" />
+    <Content Include="scripts\Select2\js\i18n\ko.js" />
+    <Content Include="scripts\Select2\js\i18n\lt.js" />
+    <Content Include="scripts\Select2\js\i18n\lv.js" />
+    <Content Include="scripts\Select2\js\i18n\mk.js" />
+    <Content Include="scripts\Select2\js\i18n\ms.js" />
+    <Content Include="scripts\Select2\js\i18n\nb.js" />
+    <Content Include="scripts\Select2\js\i18n\nl.js" />
+    <Content Include="scripts\Select2\js\i18n\pl.js" />
+    <Content Include="scripts\Select2\js\i18n\pt-BR.js" />
+    <Content Include="scripts\Select2\js\i18n\pt.js" />
+    <Content Include="scripts\Select2\js\i18n\ro.js" />
+    <Content Include="scripts\Select2\js\i18n\ru.js" />
+    <Content Include="scripts\Select2\js\i18n\sk.js" />
+    <Content Include="scripts\Select2\js\i18n\sr-Cyrl.js" />
+    <Content Include="scripts\Select2\js\i18n\sr.js" />
+    <Content Include="scripts\Select2\js\i18n\sv.js" />
+    <Content Include="scripts\Select2\js\i18n\th.js" />
+    <Content Include="scripts\Select2\js\i18n\tr.js" />
+    <Content Include="scripts\Select2\js\i18n\uk.js" />
+    <Content Include="scripts\Select2\js\i18n\vi.js" />
+    <Content Include="scripts\Select2\js\i18n\zh-CN.js" />
+    <Content Include="scripts\Select2\js\i18n\zh-TW.js" />
+    <Content Include="scripts\Select2\js\select2.full.js" />
+    <Content Include="scripts\Select2\js\select2.full.min.js" />
+    <Content Include="scripts\Select2\js\select2.js" />
+    <Content Include="scripts\Select2\js\select2.min.js" />
+    <Content Include="scripts\settings.js" />
+    <Content Include="styles\editable-listview.css" />
+    <Content Include="styles\fonts\ufonts.com_din-medium.ttf" />
+    <Content Include="styles\kendo.mobile.all.min.css" />
+    <Content Include="styles\kendo.mobile.flat.material-blue.css" />
+    <Content Include="styles\main.css" />
+    <Content Include="views\contacts.html" />
+    <Content Include="views\home.html" />
+    <Content Include="views\identifier.html" />
+    <Content Include="views\location.html" />
+    <Content Include="views\relocater.html" />
+    <Content Include="views\settings.html" />
+    <Content Include="views\shipments.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="App_Resources\Android\AndroidManifest.xml" />
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-hdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-land-hdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-land-ldpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-land-mdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-land-xhdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-land-xxhdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-land-xxxhdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-xhdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-xhdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-xxhdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-xxhdpi\splashscreen.png" />
+    <Resource Include="App_Resources\Android\drawable-xxxhdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-xxxhdpi\splashscreen.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-1366@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait-1366@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-40@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-60@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-83.5@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\iOS\watch-172x172.png" />
+    <Resource Include="App_Resources\iOS\watch-196x196.png" />
+    <Resource Include="App_Resources\iOS\watch-48x48.png" />
+    <Resource Include="App_Resources\iOS\watch-55x55.png" />
+    <Resource Include="App_Resources\iOS\watch-58x58.png" />
+    <Resource Include="App_Resources\iOS\watch-80x80.png" />
+    <Resource Include="App_Resources\iOS\watch-87x87.png" />
+    <Resource Include="App_Resources\iOS\watch-88x88.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\Assets\BadgeLogo.png" />
+    <Resource Include="App_Resources\WP8\Assets\Logo.png" />
+    <Resource Include="App_Resources\WP8\Assets\SplashScreen.png" />
+    <Resource Include="App_Resources\WP8\Assets\SquareTile150x150.png" />
+    <Resource Include="App_Resources\WP8\Assets\SquareTile71x71.png" />
+    <Resource Include="App_Resources\WP8\Assets\StoreLogo.png" />
+    <Resource Include="App_Resources\WP8\Assets\WideLogo.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.screen-720p.jpg" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.screen-WVGA.jpg" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="kendo\typescript\jquery.d.ts" />
+    <TypeScriptCompile Include="kendo\typescript\kendo.mobile.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xxxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-xhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-xxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-xxxhdpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Assets\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="components\" />
+    <Folder Include="components\appsettings\" />
+    <Folder Include="components\auth\" />
+    <Folder Include="components\bulk\" />
+    <Folder Include="components\home\" />
+    <Folder Include="components\identifier\" />
+    <Folder Include="components\IQRapi\" />
+    <Folder Include="components\location\" />
+    <Folder Include="components\photo\" />
+    <Folder Include="components\relocater\" />
+    <Folder Include="components\shipments\" />
+    <Folder Include="components\utility\" />
+    <Folder Include="css\" />
+    <Folder Include="images\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
+    <Folder Include="kendo\" />
+    <Folder Include="kendo\js\" />
+    <Folder Include="kendo\styles\" />
+    <Folder Include="kendo\styles\images\" />
+    <Folder Include="kendo\typescript\" />
+    <Folder Include="Plugins\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scripts\Select2\" />
+    <Folder Include="scripts\Select2\css\" />
+    <Folder Include="scripts\Select2\js\" />
+    <Folder Include="scripts\Select2\js\i18n\" />
+    <Folder Include="styles\" />
+    <Folder Include="styles\fonts\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(IceniumTargets)Build.targets" />
+</Project>

@@ -2,12 +2,12 @@
   "ProjectName": "IQR-Mobile6",
   "ProjectGuid": "c2238f7c-98b7-4ca2-b4b5-1a110b03e727",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.iqapp",
-  "DisplayName": "IQR-Mobile6",
+  "AppIdentifier": "com.iqreseller.mobile",
+  "DisplayName": "IQ reseller Warehouse",
   "Author": "",
   "Description": "IQR-Mobile6",
-  "BundleVersion": "1.3",
-  "AndroidVersionCode": "29",
+  "BundleVersion": "1.4",
+  "AndroidVersionCode": "30",
   "iOSDeviceFamily": [
     "1",
     "2"
@@ -16,6 +16,7 @@
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "6.4.0",
   "AndroidPermissions": [
+    "android.permission.CAMERA",
     "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
@@ -42,5 +43,11 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "iOSDeploymentTarget": "6.0"
+  "iOSDeploymentTarget": "6.0",
+  "CordovaPluginVariables": {
+    "cordova-plugin-camera": {
+      "CAMERA_USAGE_DESCRIPTION": "uses photos",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "uses photos"
+    }
+  }
 }
