@@ -527,13 +527,14 @@ app.photoView = kendo.observable({});
                         destinationType: 0,
                         encodingType: 0,
                         sourceType: 1,
-                        targetWidth: 2560, // we can tweak width/height based on determined quality if desired
-                        targetHeight: 2560
+                        targetWidth: 1000, // we can tweak width/height based on determined quality if desired
+                        targetHeight: 1000
                     };
 
                     navigator.camera.getPicture(function (data) {
                         localStorage.setItem('baseimage', data);
                         
+                        alert(data);
                         basedata.push(_base64ToArrayBuffer(data));
                         dataimage.push(data);
                         console.log(dataimage);

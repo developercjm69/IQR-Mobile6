@@ -5,8 +5,8 @@
   "AppIdentifier": "com.iqreseller.mobile",
   "DisplayName": "IQ reseller Warehouse",
   "Author": "",
-  "Description": "IQR-Mobile6",
-  "BundleVersion": "1.4",
+  "Description": "IQ reseller Warehouse",
+  "BundleVersion": "1.5",
   "AndroidVersionCode": "30",
   "iOSDeviceFamily": [
     "1",
@@ -48,6 +48,14 @@
     "cordova-plugin-camera": {
       "CAMERA_USAGE_DESCRIPTION": "uses photos",
       "PHOTOLIBRARY_USAGE_DESCRIPTION": "uses photos"
+    },
+    "cordova-plugin-media-capture": {
+      "CAMERA_USAGE_DESCRIPTION": "This part of the app uses the camera",
+      "MICROPHONE_USAGE_DESCRIPTION": "This part of the app uses the microphone",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "This part of the app uses the photo library"
+    },
+    "com.phonegap.plugins.barcodescanner": {
+      "CAMERA_USAGE_DESCRIPTION": "This part of the app uses the camera"
     }
   }
 }
